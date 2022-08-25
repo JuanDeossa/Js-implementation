@@ -86,7 +86,6 @@
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
-    /* border-radius: 6px; */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px 20px 0 20px;
@@ -115,6 +114,40 @@
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
+}
+
+/* Estilos de clase8.html - menu desplegable mobile */
+.mobile-menu {
+    position: absolute; top: 60px;
+    padding: 0px 5px;
+    border: 1px solid var(--very-light-pink);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+}
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+.email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+.sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
 }
 
 
