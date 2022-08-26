@@ -105,3 +105,4 @@ function renderProductos(objArray) {
 }
 
 renderProductos(Products);
+
