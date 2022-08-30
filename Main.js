@@ -1,30 +1,42 @@
 let emailMenuLink = document.querySelector(".navbar-email");
 let emailMenu = document.querySelector(".desktop-menu")
-
 let bgrMenuLink = document.querySelector(".menu");
 let bgrMenu = document.querySelector(".mobile-menu");
-
 let shoppingCarMenuLink = document.querySelector(".navbar-shopping-cart");
 let shoppingCarMenu = document.querySelector(".product-detail");
-
 let cardsContanier = document.querySelector(".cards-container");
+let ProductDetailCard = document.querySelector(".product-detail-card");
+let ProductDetailCardClose = document.querySelector(".product-detail-card-close");
 
 emailMenuLink.addEventListener("click",emailFunction)
 bgrMenuLink.addEventListener("click",bgrFunction)
 shoppingCarMenuLink.addEventListener("click",cartFunction)
+ProductDetailCardClose.addEventListener("click",closeCard)
 
 function emailFunction() {
-    shoppingCarMenu.classList.add("isHidden")
+    ProductDetailCard.classList.add("isHidden");
+    shoppingCarMenu.classList.add("isHidden");
     emailMenu.classList.toggle("isHidden");
 }
 function bgrFunction() {
-    shoppingCarMenu.classList.add("isHidden")
+    ProductDetailCard.classList.add("isHidden");
+    shoppingCarMenu.classList.add("isHidden");
     bgrMenu.classList.toggle("isHidden");
 }
 function cartFunction() {
-    emailMenu.classList.add("isHidden")
-    bgrMenu.classList.add("isHidden")
+    ProductDetailCard.classList.add("isHidden");
+    emailMenu.classList.add("isHidden");
+    bgrMenu.classList.add("isHidden");
     shoppingCarMenu.classList.toggle("isHidden");
+}
+function openProductDetailCard(){
+    shoppingCarMenu.classList.add("isHidden");
+    emailMenu.classList.add("isHidden");
+    bgrMenu.classList.add("isHidden");
+    ProductDetailCard.classList.remove("isHidden");
+}
+function closeCard() {
+    ProductDetailCard.classList.add("isHidden");
 }
 
 let Products = [
@@ -78,6 +90,7 @@ function renderProductos(objArray) {
         
         const productcardimg = document.createElement("img");
         productcardimg.setAttribute("src",item.image);
+        productcardimg.addEventListener("click",openProductDetailCard);
         
         const productInfo = document.createElement("div");
         productInfo.classList.add("product-info");
