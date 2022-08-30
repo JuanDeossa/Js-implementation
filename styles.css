@@ -88,6 +88,7 @@ nav {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px 20px 0 20px;
+    background-color: var(--white);
 }
 .desktop-menu ul {
     list-style: none;
@@ -122,6 +123,7 @@ nav {
     border: 1px solid var(--very-light-pink);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color: var(--white);
 }
 .mobile-menu a {
     text-decoration: none;
@@ -160,6 +162,7 @@ nav {
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    background-color: var(--white);
 }
 .title-container {
     display: flex;
@@ -307,4 +310,3 @@ nav {
         display: none;
     }
 }
-
