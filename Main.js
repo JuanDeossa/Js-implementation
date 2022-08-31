@@ -100,43 +100,43 @@ let Products = [
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     }, 
     {
-    name: "Motorcycle1", 
+    name: "Motorcycle 1", 
     price: 20000,
     image: "https://cloud.leparking-moto.fr/2021/07/31/17/32/yamaha-mt-yamaha-mt09-2015-in-dundee-gumtree-violet_154981581.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle2", 
+    name: "Motorcycle 2", 
     price: 30000,
     image: "https://rodaticarros.com.co/images/listings/2022-03/d815480c-1647424979-770.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle3", 
+    name: "Motorcycle 3", 
     price: 22000,
     image: "https://img.clasf.co/2020/07/19/Yamaha-Xt-660-R-20200719233715.0764550015.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle4", 
+    name: "Motorcycle 4", 
     price: 15000,
     image: "https://www.tmxnews.co.uk/wp-content/uploads/2018/02/20150921_083759-2080x1384.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle5", 
+    name: "Motorcycle 5", 
     price: 13000,
-    image: "http://moto.zombdrive.com/images/honda-xr650-3.jpg",
+    image: "https://http2.mlstatic.com/D_NQ_NP_707440-MLA51139189150_082022-W.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle6", 
+    name: "Motorcycle 6", 
     price: 21000,
     image: "https://www.moto1pro.com/sites/default/files/fotosprincipales/01_yamaha2021.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
     },  
     {
-    name: "Motorcycle7", 
+    name: "Motorcycle 7", 
     price: 17000,
     image: "https://rodatiautos.ar/images/listings/2022-04/b18734ee-1649071668-189.jpg",
     description: "This is a great item for you, what are you waiting for ?, buy Now!!!"
