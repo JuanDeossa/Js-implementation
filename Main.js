@@ -6,6 +6,7 @@ let shoppingCarMenuLink = document.querySelector(".navbar-shopping-cart");
 let shoppingCarMenu = document.querySelector(".product-detail");
 let cardsContanier = document.querySelector(".cards-container");
 let ProductDetailCard = document.querySelector(".product-detail-card");
+let ProductDetailCardImg = document.querySelector(".product-detail-card__img");
 let ProductDetailCardClose = document.querySelector(".product-detail-card-close");
 
 emailMenuLink.addEventListener("click",emailFunction)
@@ -33,8 +34,15 @@ function openProductDetailCard(){
     shoppingCarMenu.classList.add("isHidden");
     emailMenu.classList.add("isHidden");
     bgrMenu.classList.add("isHidden");
+    ProductDetailCardImg.setAttribute("src",event.target.src);
+    ProductDetailCardImg.setAttribute("src",event.target.src);
+    ProductDetailCardImg.setAttribute("src",event.target.src);
     ProductDetailCard.classList.remove("isHidden");
+    // openProductDetailCard_2();
 }
+// function openProductDetailCard_2(){
+//     ProductDetailCard.classList.remove("isHidden");
+// }
 function closeCard() {
     ProductDetailCard.classList.add("isHidden");
 }
@@ -76,8 +84,23 @@ let Products = [
     image: "https://http2.mlstatic.com/D_NQ_NP_834662-CBT49727650422_042022-V.jpg"
     }, 
     {
-    name: "Motorcycle", 
+    name: "Motorcycle1", 
     price: 20000,
+    image: "https://cloud.leparking-moto.fr/2021/07/31/17/32/yamaha-mt-yamaha-mt09-2015-in-dundee-gumtree-violet_154981581.jpg"
+    },  
+    {
+    name: "Motorcycle2", 
+    price: 30000,
+    image: "https://cloud.leparking-moto.fr/2021/07/31/17/32/yamaha-mt-yamaha-mt09-2015-in-dundee-gumtree-violet_154981581.jpg"
+    },  
+    {
+    name: "Motorcycle3", 
+    price: 22000,
+    image: "https://cloud.leparking-moto.fr/2021/07/31/17/32/yamaha-mt-yamaha-mt09-2015-in-dundee-gumtree-violet_154981581.jpg"
+    },  
+    {
+    name: "Motorcycle4", 
+    price: 18000,
     image: "https://cloud.leparking-moto.fr/2021/07/31/17/32/yamaha-mt-yamaha-mt09-2015-in-dundee-gumtree-violet_154981581.jpg"
     },  
 ]
