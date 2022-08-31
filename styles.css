@@ -2,15 +2,19 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    --very-light-pink: #C7C7C7;
+    --very-light-grey: #6b6b6b;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
-    --sm: 14px;
+    --sm: 14rem;
     --md: 16px;
     --lg: 18px;
 }
 *{
     box-sizing: border-box; margin: 0; padding: 0;
+}
+html{
+    font-size: 6.25%;
+    width: 100vw;
 }
 body {
     margin: 0;
@@ -22,12 +26,22 @@ body {
 
 /* Estilos de clase11.html - menu principal */
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: 61px;
+    min-width: 320px;
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-    border-bottom: 1px solid var(--very-light-pink);
+    border-bottom: 1px solid var(--very-light-grey);
+    z-index: 2;
+    font-size: 20rem;
 }
 .menu {
+    width: 30px; height: 30px;
+    align-self: center;
     display: none;
 }
 .logo {
@@ -49,7 +63,7 @@ nav {
 }
 .navbar-left ul li a,.navbar-right ul li a {
     text-decoration: none;
-    color: var(--very-light-pink);
+    color: var(--very-light-grey);
     border: 1px solid var(--white);
     padding: 8px;
     border-radius: 8px;
@@ -59,12 +73,28 @@ nav {
     color: var(--hospital-green);
 }
 .navbar-email {
-    color: var(--very-light-pink);
-    font-size: var(--sm);
+    color: var(--very-light-grey);
+    font-size: 18rem;
     margin-right: 12px;
+    cursor: pointer;
+}
+.navbar-email:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 .navbar-shopping-cart {
+    width: 35px;
+    height: 35px;
+    display: grid;
     position: relative;
+}
+.navbar-shopping-cart:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--very-light-grey);
+    border-radius: 50%;
+}
+.navbar-shopping-cart img {
+    place-self: center;
 }
 .navbar-shopping-cart div {
     width: 16px;
@@ -86,7 +116,7 @@ nav {
     position: absolute; top: 60px; right: 55px;
     width: 200px;
     height: auto;
-    border: 1px solid var(--very-light-pink);
+    border: 1px solid var(--very-light-grey);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px 20px 0 20px;
@@ -105,7 +135,7 @@ nav {
 }
 .desktop-menu ul li:last-child {
     padding-top: 20px;
-    border-top: 1px solid var(--very-light-pink);
+    border-top: 1px solid var(--very-light-grey);
 }
 .desktop-menu ul li:last-child a {
     color: var(--hospital-green);
@@ -124,7 +154,7 @@ nav {
     top: 60px;
     left: 0;
     padding-left: 20px;
-    border: 1px solid var(--very-light-pink);
+    border: 1px solid var(--very-light-grey);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: var(--white);
@@ -142,7 +172,7 @@ nav {
     list-style: none;
 }
 .mobile-menu ul:nth-child(1) {
-    border-bottom: 1px solid var(--very-light-pink);
+    border-bottom: 1px solid var(--very-light-grey);
 }
 .mobile-menu ul li {
     margin-bottom: 24px;
@@ -159,7 +189,7 @@ nav {
 /* Product Detail menu */
 .product-detail {
     position: absolute; top: 60px;
-    border: 1px solid var(--very-light-pink);
+    border: 1px solid var(--very-light-grey);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 360px;
@@ -208,6 +238,7 @@ nav {
     gap: 16px;
     margin-bottom: 24px;
     align-items: center;
+    cursor: pointer;
 }
 .shopping-cart figure {
     margin: 0;
@@ -219,7 +250,7 @@ nav {
     object-fit: cover;
 }
 .shopping-cart p:nth-child(2) {
-    color: var(--very-light-pink);  
+    color: var(--very-light-grey);  
 }
 .shopping-cart p:nth-child(3) {
     font-size: var(--md);
@@ -237,23 +268,30 @@ nav {
     height: 50px;
 }
 
-
 /* Estilos clase6 section cards */
+.main-container{
+    width: 100vw;
+}
 .cards-container {
+    width: 90%;
+    min-width: 288px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
-    margin-top: 25px;
+    margin: 80px auto 50px;
 }
 .product-card {
-    width: 240px;
+    /* min-width: 270px; */
+    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 .product-card img {
     width: 240px;
     height: 240px;
     border-radius: 20px;
-    object-fit: cover;
+    background-size: cover;
 }
 .product-info {
     display: flex;
@@ -278,7 +316,7 @@ nav {
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--very-light-pink);
+    color: var(--very-light-grey);
 }
 
 
@@ -290,6 +328,7 @@ nav {
     right: 0;
     background-color: var(--white);
     top: 60px;
+    z-index: 1;
   }
   .product-detail-card-close {
     display: grid;
@@ -297,26 +336,25 @@ nav {
     background: var(--white);
     width: 30px;
     height: 30px;
-    position: absolute;
+    position: relative;
     top: 24px;
     left: 24px;
     z-index: 2;
     border-radius: 50%;
+    cursor: pointer;
   }
   .product-detail-card-close:hover {
     transform: scale(1.25);
     border: 1px solid #8f8d8d;
+    cursor: pointer;
   }
   .product-detail-card-close img {
     place-self: center;
   }
-  .product-detail-card-close:hover {
-    cursor: pointer;
-  }
   .product-detail-card > img:nth-child(2) {
     width: 100%;
     height: 360px;
-    object-fit: cover;
+    background-image: cover;
     border-radius: 0 0 20px 20px;
   }
   .product-info-card {
@@ -329,13 +367,13 @@ nav {
     margin-bottom: 4px;
   }
   .product-info-card p:nth-child(2) {
-    color: var(--very-light-pink);
+    color: var(--very-light-grey);
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 36px;
   }
   .product-info-card p:nth-child(3) {
-    color: var(--very-light-pink);
+    color: var(--very-light-grey);
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 36px;
